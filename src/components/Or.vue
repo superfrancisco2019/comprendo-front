@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
+    <hr>
     <h1>{{ msg }}</h1>  
+    <hr>
   </div>
 </template>
 
@@ -9,16 +11,28 @@ export default {
   name: 'Or',
   data () {
     return {
-      msg: 'or',
+      msg: 'OU',
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
-h1, h2 {
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+h1{
   font-weight: normal;
-  color:blue;
+  color:#00000;
+  font-size:3vh;
+  font-family:roboto;
+  opacity:20%
+}
+hr{
+color:#00000;
+
+}
+.hello{
+  
+  
 }
 </style>
