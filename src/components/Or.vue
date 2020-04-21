@@ -32,7 +32,6 @@ color:#00000;
 
 }
 .hello{
-  
-  
+  flex-direction:row
 }
 </style>
