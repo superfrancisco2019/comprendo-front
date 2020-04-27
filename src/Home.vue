@@ -1,7 +1,8 @@
 <template>
   <div id="home">
     <Logo/>
-    <Tagline/>
+    <Tagline/>  
+    <img id="rocket" src="./images/rocket.svg">
     <div id="frame">
         <div id="buton">
           <button id="create" v-on:click='x'> Créer un nouvel évènement </button>
@@ -33,10 +34,23 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  margin:0;
+  padding:0
+}
 #home {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   font-family:'Roboto';
+  min-height:100vh;
+  background-color:#68E1FD;
+  background-size: cover
+}
+img{
+  width:100%;
+  height:100%;
+  position:relative
 }
 p{
   text-align:left;
@@ -63,23 +77,22 @@ input{
   font-family:'Roboto'; 
 }
 #frame{
-    border-radius : 20px;
-    background-color:white;
-    padding:2vh;
-    box-shadow: 1px 1px 15px #cccccc;
+  border-radius : 20px;
+  background-color:white;
+  padding:2vh;
+  box-shadow: 1px 1px 15px #cccccc;
 }
 #check{
-    background-color:#1ABC9C;
-    border-radius:10px;
-    border:none;
-    width:10vh;
-    position:relative;
-    right:1.5vh;
+  background-color:#1ABC9C;
+  border-radius:10px;
+  border:none;
+  width:10vh;
+  position:relative;
+  right:1.5vh;
 }
-
 form{
-    display:flex;
-    height:8vh;
+  display:flex;
+  height:8vh;
 }
 
 

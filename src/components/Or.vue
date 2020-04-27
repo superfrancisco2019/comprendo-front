@@ -2,7 +2,6 @@
   <div class="hello">
     <hr>
     <h1>{{ msg }}</h1>  
-    <hr>
   </div>
 </template>
 
@@ -23,12 +22,17 @@ export default {
 h1{
   font-weight: normal;
   color:#00000;
-  font-size:3vh;
+  font-size:20px;
   font-family:roboto;
-  opacity:20%
+  opacity:20%;
+  position:absolute;
+  left:25vh;
+  top:108vh;
+  background-color:white;
+  z-index:1
 }
 hr{
-color:#00000;
+  color:#00000;
 
 }
 .hello{

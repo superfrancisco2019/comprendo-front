@@ -9,7 +9,7 @@ export default {
   name: 'Tagline',
   data () {
     return {
-      text: "L'important n'est pas de participer, mais de comprendre"
+      text: "L'important n'est pas de participer, mais de comprendre."
     }
   }
 }
@@ -22,7 +22,7 @@ export default {
 h2 {
   font-family:'Roboto';
   opacity:16%;
-  font-size:17px;
+  font-size:20px;
   padding-right:4vh;
   padding-left:4vh
 }

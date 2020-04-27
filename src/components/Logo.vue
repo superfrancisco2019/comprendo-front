@@ -19,9 +19,12 @@ export default {
 <style scoped>
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 h1 {
   font-weight: normal;
   color:#60AEE3;
   font-family:'Pacifico';
+  margin:0;
+  padding:0
 }
 </style>
