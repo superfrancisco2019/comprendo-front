@@ -41,11 +41,12 @@ body{
 }
 #home {
   text-align: center;
-  margin-top: 20px;
+  padding-top: 20px;
   font-family:'Roboto';
   min-height:100vh;
-  background-color:#68E1FD;
-  background-size: cover
+  background-color:#DBF8FF;
+  background-size: cover;
+  box-sizing: border-box;
 }
 img{
   width:100%;

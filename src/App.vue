@@ -22,8 +22,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 #app{
   text-align:center
+}
+
+html, body {
+  margin: 0;
 }
 </style>

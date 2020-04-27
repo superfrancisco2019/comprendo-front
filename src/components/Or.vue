@@ -1,7 +1,6 @@
 <template>
-  <div class="hello">
-    <hr>
-    <h1>{{ msg }}</h1>  
+  <div class="or"> 
+    <span>{{ msg }}</span>
   </div>
 </template>
 
@@ -19,23 +18,27 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-h1{
-  font-weight: normal;
-  color:#00000;
-  font-size:20px;
-  font-family:roboto;
-  opacity:20%;
-  position:absolute;
-  left:25vh;
-  top:108vh;
+.or{
+  position: relative;
+  margin: 10px 0px;
+}
+.or::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.1);
+  height: 1px;
+  
+  z-index: 1;
+}
+.or span{
+  position:relative;
+  display: inline-block;
   background-color:white;
-  z-index:1
+  z-index: 2;
+  padding: 0px 10px;
 }
-hr{
-  color:#00000;
 
-}
-.hello{
-  flex-direction:row
-}
 </style>
