@@ -1,8 +1,6 @@
 <template>
   <div id="home">
-    <Logo/>
-    <Tagline/>  
-    <img id="rocket" src="./images/rocket.svg">
+    <background :image="rocket_img"/>
     <div id="frame">
         <div id="buton">
           <button id="create" v-on:click='x'> Créer un nouvel évènement </button>
@@ -11,23 +9,30 @@
         <p> Rejoindre un évènement : </p>
         <form id="form" @submit="checkform" action="" method="post">
           <input type="text" code="code" placeholder="Code (Ex:12345)" id="code" required>
-          <button id="check"> ok </button>
+          <button id="check"> 
+            <fa icon="check" />  
+          </button>
         </form>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from './components/Logo'
-import Tagline from './components/Tagline'
-import Or from './components/Or'
+import Or from '../components/Or'
+import background from '../components/background'
+
+import rocket_img from '../assets/images/rocket.svg'
 
 export default {
   name: 'Home',
+  data: function(){
+    return {
+      rocket_img: rocket_img
+    }
+  },
   components: {
-    Logo,
-    Tagline,
-    Or
+    Or,
+    background
   }
 }
 </script>
@@ -72,13 +77,7 @@ p{
   height:8vh;
   border-radius:30px
   }
-input{
-  background-color:#e6e6e6;
-  border:none;
-  border-radius:10px;
-  width:100%;
-  font-family:'Roboto'; 
-}
+
 #frame{
   border-radius : 20px;
   background-color:white;

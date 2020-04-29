@@ -1,14 +1,12 @@
 <template>
   <div id="connexion">
-    <Logo/>
-    <Tagline/>
-    <img id="rocket" src="./images/rocket.svg">
+    <img id="rocket" src="@/assets/images/rocket.svg">
     <div id="frame">
     <div class="top-frame">
-      <img class="arrow" src="./images/back.png">
+      <img class="arrow" src="@/assets/images/back.png">
       <p> Connexion </p>
     </div>
-    <hr></hr>
+    <hr/>
         <form id="form" @submit="checkform" action="" method="post">
           <label for="email"> Email* </label>
           <input type="text" required>
@@ -21,14 +19,10 @@
 </template>
 
 <script>
-import Logo from './components/Logo'
-import Tagline from './components/Tagline'
 
 export default {
   name: 'Connexion',
   components: {
-    Logo,
-    Tagline
   }
 }
 </script>
@@ -97,19 +91,5 @@ p{
   top:-174vh;
  
 }
-label{
-  text-align:left;
-  opacity:40%;
-  font-size:20px;
-  font-family:'Roboto'; 
-}
-input{
-  margin-top:2vh;
-  margin-bottom:2vh;
-  border:none;
-  background-color:#e6e6e6;
-  border-radius:10px;
-  width:100%;
-  height:8vh
-}
+
 </style>

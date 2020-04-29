@@ -1,35 +1,48 @@
 <template>
   <div id="app">
-    <Home/>
-    <Connexion/>
-    <ViewerMode/>
-    <SignIn/>
+    <brand/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Home from './Home'
-import Connexion from './Connexion'
-import ViewerMode from './ViewerMode'
-import SignIn from './SignIn'
+import brand from './components/brand'
 
 export default {
   name: 'App',
   components: {
-    Home,
-    Connexion,
-    ViewerMode,
-    SignIn
+    brand
   }
 }
 </script>
 
 <style>
-#app{
-  text-align:center
-}
+  #app{
+    text-align:center
+  }
 
-html, body {
-  margin: 0;
-}
+  html, body {
+    margin: 0;
+  }
+
+  label{
+    text-align:left;
+    opacity:40%;
+    font-size:20px;
+    font-family:'Roboto'; 
+  }
+
+  input{
+    background-color:#e6e6e6;
+    border:none;
+    border-radius:10px;
+    width:100%;
+    font-family:'Roboto'; 
+    margin-top:5px;
+    margin-bottom:5px;
+    height:50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
 </style>

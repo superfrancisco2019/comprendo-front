@@ -1,13 +1,9 @@
 <template>
   <div class="sign-in">
-    <div class="page-top">
-      <Logo/>
-      <Tagline/>
-    </div>
     <div class="page-content">
-      <img class="rocket" src="./images/rocket.svg">
+      <img class="rocket" src="@/assets/images/rocket.svg">
       <div class="form-header">
-            <img class="arrow" src="./images/back.png">
+            <img class="arrow" src="@/assets/images/back.png">
             <p> Inscription </p>
       </div>  
       <form id="formulaire" @submit="checkform" action="" method="post">
@@ -24,14 +20,10 @@
 </template>
 
 <script>
-import Logo from './components/Logo'
-import Tagline from './components/Tagline'
 
 export default {
   name: 'SignIn',
   components: {
-    Logo,
-    Tagline
   }
 }
 </script>

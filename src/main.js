@@ -1,26 +1,18 @@
-
 import Vue from 'vue'
-//import VueRouter from 'vue-router'
-//Vue.use(VueRouter)
-//const router = new VueRouter({
-  //mode: 'history',
-  //routes:[{
-   // path:'/',
-    //component: require('./components/Page1.vue')
- // },{
-   ///redirect:'/'
+import router from './routes'
+import App from './App.vue'
+Vue.config.productionTip = false;
 
-  //}]
-//})
-import App from './App'
 
-Vue.config.productionTip = false
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-/* eslint-disable no-new */
+library.add(faCheck)
+
+Vue.component('fa', FontAwesomeIcon)
+
 new Vue({
-  el: '#app',
-  //router,
-  components: { App },
-  template: '<App/>',
-  //render: h => h(require('./App.vue'))
-})
+  render: h => h(App),
+  router,
+}).$mount('#app')

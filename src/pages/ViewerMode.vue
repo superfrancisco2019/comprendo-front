@@ -1,7 +1,5 @@
 <template>
   <div id="viewermode">
-  <img class="wave" src="./images/wave.svg">
-   <Logo/>
    <div class="frame"> 
       <div id="name-bubble"> 
         <p class ="name">Patrick Balkany </p>
@@ -10,22 +8,20 @@
         <p class="number"> 52 </p>
       </div> 
    </div>
-   <img class="illustration" src="./images/meeting.jpeg">
+   <img class="illustration" src="@/assets/images/meeting.jpeg">
    <p class="title"> "Comment sortir de prison en deux étapes simples" </p>
    <p class="time"> Durée de l'évènement: </p>
-   <img class="dog" src="./images/beagle.svg">
+   <img class="dog" src="@/assets/images/beagle.svg">
    <p class="comment-bubble"> Clique sur le chien si tu n'as pas compris ce que Patrick vient de dire ! </p>
   </div>
 </template>
 
 <script>
-import Logo from './components/Logo'
 
 
 export default {
   name: 'ViewerMode',
   components: {
-    Logo
   }
 }
 </script>
