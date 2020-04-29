@@ -49,9 +49,11 @@ body{
   box-sizing: border-box;
 }
 img{
-  width:100%;
-  height:100%;
-  position:relative
+  width:200vh;
+  height:200vh;
+  position:absolute;
+  left:-75vh;
+  top:-50vh
 }
 p{
   text-align:left;
@@ -68,7 +70,7 @@ p{
   font-family:'Roboto';
   font-size:18px;
   height:8vh;
-  border-radius:20px
+  border-radius:30px
   }
 input{
   background-color:#e6e6e6;
@@ -82,6 +84,9 @@ input{
   background-color:white;
   padding:2vh;
   box-shadow: 1px 1px 15px #cccccc;
+  position:absolute;
+  top:65vh;
+  left:1vh
 }
 #check{
   background-color:#1ABC9C;

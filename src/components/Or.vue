@@ -21,6 +21,7 @@ export default {
 .or{
   position: relative;
   margin: 10px 0px;
+  opacity:60%
 }
 .or::before {
   content: "";

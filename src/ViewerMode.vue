@@ -1,5 +1,6 @@
 <template>
   <div id="viewermode">
+  <img class="wave" src="./images/wave.svg">
    <Logo/>
    <div class="frame"> 
       <div id="name-bubble"> 
@@ -33,7 +34,14 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .viewermode{
-  font-family:'Roboto'
+  font-family:'Roboto';
+  min-height:100vh
+}
+
+.wave{
+  position:relative;
+  bottom:-1120px;
+
 }
 
 .frame{
@@ -46,12 +54,10 @@ export default {
   background-color:white;
   border-radius:30px;
 }
-
 #number-bubble{
   background-color:white;
   border-radius:30px;
 }
-
 .name{
   font-family:'Roboto';
   opacity:40%;
@@ -59,7 +65,6 @@ export default {
   font-weight:bold;
   margin:5px
 }
-
 .number{
   font-family:'Roboto';
   opacity:40%;
@@ -67,50 +72,44 @@ export default {
   font-weight:bold;
   margin:5px
 }
-
 .illustration{
   border-radius:30px
 }
-
 .title{
   font-size:4vh;
   margin: 3vh;
   font-weight:bold;
   font-family:'Roboto';
 }
-
 .time{
   font-size:3.5vh;
   opacity:40%
 }
-
 .dog{
   width:20vh
 }
-
 .comment-bubble {
 	position: relative;
 	background: #60AEE3;
-	border-radius: .4em;
+	border-radius: 10px;
   color:white;
-  font-size:1em;
-  padding:10px;
+  font-size:20px;
+  padding:11px;
   font-family:'Roboto';
   font-weight:600;
+  margin: 13px
 }
-
 .comment-bubble:after {
 	content: '';
 	position: absolute;
-	top: 0;
+	top: 5px;
 	left: 50%;
 	width: 0;
 	height: 0;
-	border: 20px solid transparent;
+	border: 15px solid transparent;
 	border-bottom-color: #60AEE3;
 	border-top: 0;
 	margin-left: -20px;
 	margin-top: -20px;
 }
-
 </style>

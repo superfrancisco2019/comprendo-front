@@ -3,6 +3,7 @@
     <Home/>
     <Connexion/>
     <ViewerMode/>
+    <SignIn/>
   </div>
 </template>
 
@@ -10,14 +11,15 @@
 import Home from './Home'
 import Connexion from './Connexion'
 import ViewerMode from './ViewerMode'
-
+import SignIn from './SignIn'
 
 export default {
   name: 'App',
   components: {
     Home,
     Connexion,
-    ViewerMode
+    ViewerMode,
+    SignIn
   }
 }
 </script>
