@@ -1,6 +1,6 @@
 <template>
   <div id="connexion">
-    <img id="rocket" src="@/assets/images/rocket.svg">
+    <background :image="rocket_img"/>
     <div id="frame">
     <div class="top-frame">
       <img class="arrow" src="@/assets/images/back.png">
@@ -19,10 +19,18 @@
 </template>
 
 <script>
+import background from '../components/background'
+import rocket_img from '../assets/images/rocket.svg'
 
 export default {
   name: 'Connexion',
+  data: function(){
+    return {
+      rocket_img: rocket_img
+    }
+  },
   components: {
+    background
   }
 }
 </script>
@@ -42,6 +50,14 @@ export default {
 .top-frame{
   display:flex
 }
+.top-frame p{
+  font-family:'Roboto'; 
+  opacity:40%;
+  font-size:28px;
+  font-weight:500;
+  margin:0;
+  padding-left:10vh
+}
 .arrow{
   width:4vh;
   height:4vh;
@@ -55,7 +71,7 @@ export default {
   top:-70vh
 }
 #connect-button{
-  width:50vh;
+  width:46vh;
   height:4vh;
   background-color:#60AEE3;
   border:none;
@@ -70,26 +86,22 @@ form{
   display:flex;
   flex-direction:column;
 }
-hr{
-  
-  opacity:30%
+input{
+  margin-bottom:15px;
+  font-size:18px;
+  opacity:60%
 }
-p{
-  font-family:'Roboto'; 
-  opacity:40%;
-  font-size:28px;
-  font-weight:500;
-  margin:0;
-  padding-left:10vh
+hr{
+  opacity:30%
 }
 #frame{
   border-radius : 20px;
   background-color:white;
-  padding:2vh;
+  margin:15px;
+  padding:15px;
   box-shadow: 1px 1px 15px #cccccc;
   position:relative;
-  top:-174vh;
- 
+  top:44vh;
 }
 
 </style>

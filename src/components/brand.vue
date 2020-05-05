@@ -22,7 +22,7 @@ export default {
     }
   },
   watch:{
-      $route (){
+    $route(){
         this.update(); 
       }
   }, 

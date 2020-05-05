@@ -2,6 +2,7 @@
   <div id="viewermode">
    <div class="frame"> 
       <div id="name-bubble"> 
+      <fa icon="megaphone" /> 
         <p class ="name">Patrick Balkany </p>
       </div> 
       <div id="number-bubble">
@@ -33,18 +34,13 @@ export default {
   font-family:'Roboto';
   min-height:100vh
 }
-
-.wave{
-  position:relative;
-  bottom:-1120px;
-
-}
-
 .frame{
+  position:absolute;
+  top:12vh;
   display:flex;
   justify-content:space-around;
   position:relative;
-  top:4vh;
+  z-index:2
 }
 #name-bubble{
   background-color:white;
@@ -57,25 +53,32 @@ export default {
 .name{
   font-family:'Roboto';
   opacity:40%;
-  font-size:4vh;
+  font-size:18px;
   font-weight:bold;
-  margin:5px
+  margin:5px;
+  padding-top:3px
 }
 .number{
   font-family:'Roboto';
   opacity:40%;
-  font-size:4vh;
+  font-size:18px;
   font-weight:bold;
   margin:5px
 }
 .illustration{
-  border-radius:30px
+  border-radius:30px;
+  position:relative;
+  top:8vh;
+  z-index:1
 }
 .title{
-  font-size:4vh;
-  margin: 3vh;
+  font-size:23px;
+  margin-top: 11vh;
+  margin-left:6vh;
+  margin-right:6vh;
   font-weight:bold;
   font-family:'Roboto';
+  opacity:65%
 }
 .time{
   font-size:3.5vh;

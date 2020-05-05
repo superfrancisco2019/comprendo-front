@@ -63,8 +63,10 @@ img{
 p{
   text-align:left;
   margin-left:1.5vh;
-  opacity:40%;
-  font-size:19px
+  opacity:30%;
+  font-size:19px;
+  margin-top:0;
+  margin-bottom:10px
 }
 #create{
   width:50vh;
@@ -73,9 +75,10 @@ p{
   border:none;
   color:white;
   font-family:'Roboto';
-  font-size:18px;
+  font-size:22px;
   height:8vh;
-  border-radius:30px
+  border-radius:30px;
+  margin-top:15px
   }
 
 #frame{
@@ -93,12 +96,17 @@ p{
   border:none;
   width:10vh;
   position:relative;
+  bottom:-0.4vh;
   right:1.5vh;
 }
 form{
   display:flex;
   height:8vh;
+  padding-left:9px
 }
-
-
+input{
+  font-size:18px;
+  padding-left:12px;
+  opacity:50%
+}
 </style>
