@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import router from './routes'
 import App from './App.vue'
+import Carousel3d from 'vue-carousel-3d'
 Vue.config.productionTip = false;
 
+Vue.use(Carousel3d);
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'

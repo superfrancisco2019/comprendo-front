@@ -70,4 +70,18 @@ h2 {
 .brand.is-light h1{
   color:#60AEE3;
 }
+@media (min-width: 765px){
+  h1 {
+    position:absolute;
+    right:57vh;
+    top:2vh
+  }
+  h2{
+    position:absolute;
+    left:24vh;
+    top:2.5vh;
+    width:50vh;
+    padding:0
+  }
+}
 </style>

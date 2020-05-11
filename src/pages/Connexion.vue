@@ -101,7 +101,7 @@ hr{
   padding:15px;
   box-shadow: 1px 1px 15px #cccccc;
   position:relative;
-  top:44vh;
+  top:48vh;
 }
 
 </style>

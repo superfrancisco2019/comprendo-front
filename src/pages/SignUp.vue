@@ -67,10 +67,12 @@ body{
   background-size: cover;
   box-sizing: border-box;
 }
+.sign-up p{
+
+}
 .page-top{
   display:flex;
 }
-
 .sign-up-frame{
   border-radius : 20px;
   background-color:white;
@@ -85,7 +87,6 @@ body{
 .form-header{
   display:flex
 }
-
 .arrow{
   width:4vh;
   height:4vh;
@@ -94,7 +95,6 @@ body{
 form{
   margin-top:30px
 }
-
 .left-align{
   text-align:left
 }
@@ -170,26 +170,21 @@ input{
 input:checked + .switch-slider {
   background-color: #2196F3;
 }
-
 input:focus + .switch-slider {
   box-shadow: 0 0 1px #2196F3;
 }
-
 input:checked + .switch-slider:before {
   -webkit-transform: translateX(52px);
   -ms-transform: translateX(52px);
   transform: translateX(52px);
 }
-
   /* Rounded sliders */
 .switch-slider.is-round {
   border-radius: 34px;
 }
-
 .switch-slider.is-round:before {
   border-radius: 50%;
 }
-
 .create-button{
   width:36vh;
   height:4vh;
