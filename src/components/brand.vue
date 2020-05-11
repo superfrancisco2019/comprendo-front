@@ -73,13 +73,15 @@ h2 {
 @media (min-width: 765px){
   h1 {
     position:absolute;
-    right:57vh;
-    top:2vh
+    left: 30px;
+    /*right: calc(100% - 30px);*/
+    
+    top:20px;
   }
   h2{
     position:absolute;
-    left:24vh;
-    top:2.5vh;
+    right:30px;
+    top:20px;
     width:50vh;
     padding:0
   }

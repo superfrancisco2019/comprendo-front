@@ -2,8 +2,9 @@
   <div calss="adminHome" :class="{'event-created': theme === 'dashboard', 'no-event': theme === 'default'}">>
     <background :image="manager_img"/>
     <div class="user-profile">
-      <p class="name"> François B. </p>
-      <fa icon="user-circle" />
+      <p class="name"> François B. 
+        <fa icon="user-circle" />
+      </p>
     </div>
     <p class="default-text"> Vous n'avez pas encore créé d'évènement, cliquez sur le bouton '+' pour commencer l'aventure !</p>
   </div>

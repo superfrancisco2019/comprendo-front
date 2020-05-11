@@ -1,10 +1,10 @@
 <template>
   <div class="adminHome2">
     <carousel-3d>
-        <slide: index="0">
+        <slide :index="0">
             Slide 1
         </slide>
-        <slide: index="1">
+        <slide :index="1">
             Slide 2
         </slide>
     </carousel-3d>

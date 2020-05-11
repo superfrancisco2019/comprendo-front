@@ -7,10 +7,11 @@ Vue.config.productionTip = false;
 Vue.use(Carousel3d);
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCheck)
+library.add(faCheck);
+library.add(faUserCircle);
 
 Vue.component('fa', FontAwesomeIcon)
 
