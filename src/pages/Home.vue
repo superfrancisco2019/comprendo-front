@@ -16,11 +16,10 @@
     </div>
   </div>
 </template>
-
 <script>
+
 import Or from '../components/Or'
 import background from '../components/background'
-
 import rocket_img from '../assets/images/rocket.svg'
 
 export default {
@@ -62,51 +61,53 @@ img{
 }
 p{
   text-align:left;
-  margin-left:1.5vh;
-  opacity:30%;
+  margin-left:25px;
+  opacity:40%;
   font-size:19px;
   margin-top:0;
   margin-bottom:10px
 }
 #create{
-  width:50vh;
-  height:4vh;
+  width:90%;
+  height:10%;
   background-color:#60AEE3;
   border:none;
   color:white;
   font-family:'Roboto';
-  font-size:22px;
-  height:8vh;
+  font-size:21px;
+  height:60px;
   border-radius:30px;
-  margin-top:15px
-  }
-
+  margin-top:20px;
+}
 #frame{
-  border-radius : 20px;
+  border-radius:20px;
   background-color:white;
-  padding:2vh;
   box-shadow: 1px 1px 15px #cccccc;
   position:absolute;
-  top:65vh;
-  left:1vh
+  bottom:10px;
+  width: calc(100% - 30px);
+  margin:15px
 }
 #check{
   background-color:#1ABC9C;
   border-radius:10px;
   border:none;
-  width:10vh;
   position:relative;
-  bottom:-0.4vh;
-  right:1.5vh;
+  bottom:-5px;
+  right:20px;
+  height:55px;
+  width:60px;
 }
 form{
   display:flex;
-  height:8vh;
-  padding-left:9px
+  padding-left:20px;
+  padding-bottom:20px;
 }
 input{
+  height:55px;
   font-size:18px;
-  padding-left:12px;
-  opacity:50%
+  padding-left:20px;
+  opacity:50%;
+  padding-bottom:5px
 }
 </style>
