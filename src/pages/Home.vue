@@ -52,13 +52,6 @@ body{
   background-size: cover;
   box-sizing: border-box;
 }
-img{
-  width:200vh;
-  height:200vh;
-  position:absolute;
-  left:-75vh;
-  top:-50vh
-}
 p{
   text-align:left;
   margin-left:25px;
@@ -107,7 +100,34 @@ input{
   height:55px;
   font-size:18px;
   padding-left:20px;
-  opacity:50%;
+  opacity:80%;
   padding-bottom:5px
+}
+@media (min-width: 765px){
+#frame{
+  width:50%;
+  height:50%;
+  position:absolute;
+  right:20px;
+  bottom:200px;
+}
+#create{
+  height:100px;
+  margin-top:40px;
+  margin-bottom:50px;
+  font-size:25px
+}
+p{
+  padding-top:60px;
+  padding-bottom:35px;
+  font-size:22px;
+}
+input{
+  height:90px
+}
+#check{
+  height:90px;
+  width:120px
+}
 }
 </style>
