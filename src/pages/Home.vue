@@ -106,7 +106,7 @@ input{
 @media (min-width: 765px){
 #frame{
   width:50%;
-  height:50%;
+  height:50vh;
   position:absolute;
   right:20px;
   bottom:200px;
@@ -128,6 +128,19 @@ input{
 #check{
   height:90px;
   width:120px
+}}
+@media (min-width: 1000px){
+#frame{
+  height:75%;
+  position:absolute;
+  right:3px;
+  bottom:1px;
+  }
+#create{
+  height:80px;
+  margin-top:30px;
+  margin-bottom:50px;
+  font-size:25px
 }
 }
 </style>

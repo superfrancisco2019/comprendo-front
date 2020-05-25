@@ -20,4 +20,10 @@ export default {
         background-position: center center;
         background-repeat: no-repeat;
     }
+    @media (min-width: 765px){
+    .background {
+        position:relative;
+        background-position:left
+    }
+    }
 </style>
