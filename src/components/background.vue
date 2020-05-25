@@ -21,9 +21,9 @@ export default {
         background-repeat: no-repeat;
     }
     @media (min-width: 765px){
-    .background {
-        position:relative;
-        background-position:left
-    }
+        .background {
+            position:relative;
+            background-position:left
+        }
     }
 </style>

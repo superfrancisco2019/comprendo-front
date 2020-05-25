@@ -104,43 +104,42 @@ input{
   padding-bottom:5px
 }
 @media (min-width: 765px){
-#frame{
-  width:50%;
-  height:50vh;
-  position:absolute;
-  right:20px;
-  bottom:200px;
-}
-#create{
-  height:100px;
-  margin-top:40px;
-  margin-bottom:50px;
-  font-size:25px
-}
-p{
-  padding-top:60px;
-  padding-bottom:35px;
-  font-size:22px;
-}
-input{
-  height:90px
-}
-#check{
-  height:90px;
-  width:120px
-}}
-@media (min-width: 1000px){
-#frame{
-  height:75%;
-  position:absolute;
-  right:3px;
-  bottom:1px;
+  #frame{
+    width:50%;
+    position:absolute;
+    right:20px;
+    bottom:200px;
   }
-#create{
-  height:80px;
-  margin-top:30px;
-  margin-bottom:50px;
-  font-size:25px
+  /*#create{
+    height:100px;
+    margin-top:40px;
+    margin-bottom:50px;
+    font-size:25px
+  }*/
+  /*p{
+    padding-top:60px;
+    padding-bottom:35px;
+    font-size:22px;
+  }
+  input{
+    height:90px
+  }
+  #check{
+    height:90px;
+    width:120px
+  }*/
 }
-}
+/*@media (min-width: 1000px){
+  #frame{
+    position:absolute;
+    right:3px;
+    bottom:1px;
+    }
+  #create{
+    height:80px;
+    margin-top:30px;
+    margin-bottom:50px;
+    font-size:25px
+  }
+}*/
 </style>
