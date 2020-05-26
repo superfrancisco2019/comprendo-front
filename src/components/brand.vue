@@ -82,7 +82,7 @@ h2 {
     position:absolute;
     right:30px;
     top:20px;
-    width:50vh;
+    width:500px;
     padding:0
   }
 }

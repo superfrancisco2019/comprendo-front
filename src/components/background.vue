@@ -22,8 +22,7 @@ export default {
     }
     @media (min-width: 765px){
         .background {
-            position:relative;
-            background-position:left
+        background-position:left
         }
     }
 </style>

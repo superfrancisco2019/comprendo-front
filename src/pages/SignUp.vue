@@ -60,56 +60,52 @@ body{
 }
 .sign-up{
   text-align: center;
-  padding-top: 20px;
   font-family:'Roboto';
   min-height:100vh;
   background-color:#DBF8FF;
   background-size: cover;
   box-sizing: border-box;
 }
-.sign-up p{
-
-}
 .page-top{
   display:flex;
 }
 .sign-up-frame{
-  border-radius : 20px;
+  border-radius:20px;
   background-color:white;
-  margin:20px;
-  padding:30px;
+  margin:8px;
+  padding:15px;
   box-shadow: 1px 1px 15px #cccccc;
-  width:40vh;
-  position:relative;
-  top:12vh;
-  left:25vh
+  width:300px;
+  position:absolute;
+  top:130px;
+  right:80px
 }
 .form-header{
   display:flex
 }
 .arrow{
-  width:4vh;
-  height:4vh;
+  width:20px;
+  height:20px;
   opacity:40%;
 }
 form{
-  margin-top:30px
+  margin-top:15px
 }
 .left-align{
   text-align:left
 }
 label{
-  font-size:27px;
+  font-size:15px;
 }
 input{
-  height:80px;
+  height:40px;
   opacity:70%;
-  margin-bottom:20px;
-  margin-top:20px;
+  margin-bottom:10px;
+  margin-top:10px;
   border-radius:15px
 }
 .accept{
-  font-size:25px;
+  font-size:15px;
   opacity:35%;
 }
 .cgu{
@@ -118,8 +114,8 @@ input{
 .switch {
   position: relative;
   display: inline-block;
-  width: 100px;
-  height: 50px;
+  width: 55px;
+  height: 30px;
   margin-bottom: 0;
   }
 .field label.switch {
@@ -131,7 +127,7 @@ input{
   margin-bottom: 0;
 }
 .switch.is-large {
-  height: 34px;
+  height: 20px;
 }
 .switch input {
   opacity: 0;
@@ -152,17 +148,17 @@ input{
 .switch-slider:before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 40px;
-  left: 3px;
+  height: 20px;
+  width: 20px;
+  left: 4px;
   bottom: 5px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
 .switch.is-large .switch-slider:before {
-  height: 26px;
-  width: 26px;
+  height: 20px;
+  width: 20px;
   left: 4px;
   bottom: 4px;
 }
@@ -174,9 +170,9 @@ input:focus + .switch-slider {
   box-shadow: 0 0 1px #2196F3;
 }
 input:checked + .switch-slider:before {
-  -webkit-transform: translateX(52px);
-  -ms-transform: translateX(52px);
-  transform: translateX(52px);
+  -webkit-transform: translateX(27px);
+  -ms-transform: translateX(27px);
+  transform: translateX(27px);
 }
   /* Rounded sliders */
 .switch-slider.is-round {
@@ -186,16 +182,17 @@ input:checked + .switch-slider:before {
   border-radius: 50%;
 }
 .create-button{
-  width:36vh;
-  height:4vh;
+  width:250px;
+  height:40px;
   background-color:#60AEE3;
   border:none;
   color:white;
   font-family:'Roboto';
-  font-size:27px;
-  height:6.5vh;
+  font-size:15px;
   border-radius:40px;
-  margin-top:30px;
-  float:center
+  margin-top:20px;
+}
+@media (min-width: 765px){
+
 }
 </style>

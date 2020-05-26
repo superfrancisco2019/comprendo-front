@@ -105,41 +105,10 @@ input{
 }
 @media (min-width: 765px){
   #frame{
-    width:50%;
+    width:30%;
     position:absolute;
-    right:20px;
-    bottom:200px;
+    right:50px;
+    bottom:120px
   }
-  /*#create{
-    height:100px;
-    margin-top:40px;
-    margin-bottom:50px;
-    font-size:25px
-  }*/
-  /*p{
-    padding-top:60px;
-    padding-bottom:35px;
-    font-size:22px;
-  }
-  input{
-    height:90px
-  }
-  #check{
-    height:90px;
-    width:120px
-  }*/
 }
-/*@media (min-width: 1000px){
-  #frame{
-    position:absolute;
-    right:3px;
-    bottom:1px;
-    }
-  #create{
-    height:80px;
-    margin-top:30px;
-    margin-bottom:50px;
-    font-size:25px
-  }
-}*/
 </style>
