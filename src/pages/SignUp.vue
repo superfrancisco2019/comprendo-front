@@ -72,21 +72,29 @@ body{
 .sign-up-frame{
   border-radius:20px;
   background-color:white;
-  margin:8px;
   padding:15px;
   box-shadow: 1px 1px 15px #cccccc;
-  width:300px;
+  width: calc(100% - 60px);
+  margin:15px;
   position:absolute;
-  top:130px;
-  right:80px
+  top:150px
 }
 .form-header{
-  display:flex
+  display:flex;
+  flex-direction:row
 }
 .arrow{
   width:20px;
-  height:20px;
+  height:15px;
   opacity:40%;
+}
+.form-header p{
+  width:100px;
+  margin:0;
+  float:center;
+  opacity:40%;
+  font-size:20px;
+  padding-left:80px
 }
 form{
   margin-top:15px
@@ -193,6 +201,11 @@ input:checked + .switch-slider:before {
   margin-top:20px;
 }
 @media (min-width: 765px){
-
+.sign-up-frame{
+  top:140px;
+  right:80px;
+  width:300px;
+  margin:0
+}
 }
 </style>

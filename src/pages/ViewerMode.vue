@@ -2,16 +2,20 @@
   <div id="viewermode">
    <div class="frame"> 
       <div id="name-bubble"> 
-      <fa icon="megaphone" /> 
+        <fa class="bull" icon="bullhorn" /> 
         <p class ="name">Patrick Balkany </p>
       </div> 
       <div id="number-bubble">
+        <fa class="user" icon="user" /> 
         <p class="number"> 52 </p>
       </div> 
    </div>
    <img class="illustration" src="@/assets/images/meeting.jpeg">
    <p class="title"> "Comment sortir de prison en deux étapes simples" </p>
-   <p class="time"> Durée de l'évènement: </p>
+   <div class="duration">
+    <fa class='clock' icon="clock" /> 
+    <p class="time"> Durée de l'évènement: </p>
+   </div>
    <img class="dog" src="@/assets/images/beagle.svg">
    <p class="comment-bubble"> Clique sur le chien si tu n'as pas compris ce que Patrick vient de dire ! </p>
   </div>
@@ -34,6 +38,12 @@ export default {
   font-family:'Roboto';
   min-height:100vh
 }
+.bull{
+  opacity:40%;
+  padding:5px;
+  padding-top:8px
+}
+
 .frame{
   position:absolute;
   top:12vh;
@@ -45,10 +55,19 @@ export default {
 #name-bubble{
   background-color:white;
   border-radius:30px;
+  display:flex;
+  padding:2px 5px 2px 5px
+}
+.user{
+  opacity:40%;
+  padding:5px;
+  padding-top:8px
 }
 #number-bubble{
   background-color:white;
   border-radius:30px;
+  display:flex;
+  padding:2px 5px 2px 5px
 }
 .name{
   font-family:'Roboto';
@@ -80,9 +99,17 @@ export default {
   font-family:'Roboto';
   opacity:65%
 }
+.duration{
+  display:flex;
+  justify-content:space-around
+}
+.clock{
+  opacity:40%
+}
 .time{
   font-size:3.5vh;
-  opacity:40%
+  opacity:40%;
+  margin:0
 }
 .dog{
   width:20vh

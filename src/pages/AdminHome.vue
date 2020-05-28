@@ -3,10 +3,11 @@
     <background :image="manager_img"/>
     <div class="user-profile">
       <p class="name"> François B. 
-        <fa icon="user-circle" />
+        <fa icon="user-circle" class='user'/>
       </p>
     </div>
     <p class="default-text"> Vous n'avez pas encore créé d'évènement, cliquez sur le bouton '+' pour commencer l'aventure !</p>
+    <fa icon="plus-circle"/>
   </div>
 </template>
 
@@ -34,7 +35,7 @@ export default {
 .name{
   font-family:'Roboto';
   position:absolute;
-  left:60vh;
+  right:30px;
   top:3vh;
   color:white;
   font-size:20px;
@@ -45,11 +46,11 @@ export default {
   font-family:'Roboto';
   position:absolute;
   top:80vh;
-  left:6vh;
-  padding-left:8vh;
-  padding-right:8vh;
+  width:calc(100%-500px);
+  padding: 0 120px 0 120px;
   font-size:23px;
   font-weight:500;
   opacity:25%;
 }
+
 </style>
