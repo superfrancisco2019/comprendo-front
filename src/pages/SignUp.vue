@@ -81,7 +81,8 @@ body{
 }
 .form-header{
   display:flex;
-  flex-direction:row
+  flex-direction:row;
+  align-items: center;
 }
 .arrow{
   width:20px;
@@ -89,12 +90,10 @@ body{
   opacity:40%;
 }
 .form-header p{
-  width:100px;
-  margin:0;
-  float:center;
   opacity:40%;
   font-size:20px;
-  padding-left:80px
+  flex-grow: 1;
+margin-right: 20px;
 }
 form{
   margin-top:15px
