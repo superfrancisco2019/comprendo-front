@@ -77,23 +77,29 @@ body{
   width: calc(100% - 60px);
   margin:15px;
   position:absolute;
-  top:150px
+  bottom:10px;
+  
 }
 .form-header{
   display:flex;
   flex-direction:row;
   align-items: center;
 }
+hr{
+  margin:0;
+  opacity:30%
+}
 .arrow{
   width:20px;
   height:15px;
-  opacity:40%;
+  opacity:30%;
 }
 .form-header p{
-  opacity:40%;
+  opacity:30%;
   font-size:20px;
   flex-grow: 1;
-margin-right: 20px;
+  margin-right: 20px;
+  font-weight:bold
 }
 form{
   margin-top:15px
@@ -108,8 +114,8 @@ input{
   height:40px;
   opacity:70%;
   margin-bottom:10px;
-  margin-top:10px;
-  border-radius:15px
+  margin-top:6px;
+  border-radius:10px
 }
 .accept{
   font-size:15px;
@@ -195,13 +201,13 @@ input:checked + .switch-slider:before {
   border:none;
   color:white;
   font-family:'Roboto';
-  font-size:15px;
+  font-size:21px;
   border-radius:40px;
   margin-top:20px;
 }
 @media (min-width: 765px){
 .sign-up-frame{
-  top:140px;
+  top:135px;
   right:80px;
   width:300px;
   margin:0

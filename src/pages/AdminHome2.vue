@@ -2,7 +2,7 @@
   <div class="adminHome2">
     <carousel-3d>
         <slide :index="0">
-            Slide 1
+            <img src="@/assets/images/meeting.jpeg">
         </slide>
         <slide :index="1">
             Slide 2
@@ -27,5 +27,10 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
+img{
+  width:100%;
+  height:100%
+}
 
 </style>

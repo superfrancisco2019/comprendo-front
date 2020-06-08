@@ -1,7 +1,10 @@
 <template>
   <div id="home">
-    <background :image="rocket_img"/>
-    <div id="frame">
+    <div class="body">
+      <div>
+        <background :image="rocket_img"/>
+      </div>
+      <div id="frame">
         <div id="buton">
           <button id="create" v-on:click='x'> Créer un nouvel évènement </button>
         </div> 
@@ -13,7 +16,8 @@
             <fa icon="check" />  
           </button>
         </form>
-    </div>
+      </div>
+    </div>  
   </div>
 </template>
 <script>
@@ -44,7 +48,6 @@ body{
   padding:0
 }
 #home {
-  text-align: center;
   padding-top: 20px;
   font-family:'Roboto';
   min-height:100vh;
@@ -68,10 +71,11 @@ p{
   color:white;
   font-family:'Roboto';
   font-size:21px;
-  height:60px;
+  height:40px;
   border-radius:30px;
   margin-top:20px;
 }
+
 #frame{
   border-radius:20px;
   background-color:white;
@@ -88,8 +92,8 @@ p{
   position:relative;
   bottom:-5px;
   right:20px;
-  height:55px;
-  width:60px;
+  height:40px;
+  width:50px;
 }
 form{
   display:flex;
@@ -97,18 +101,27 @@ form{
   padding-bottom:20px;
 }
 input{
-  height:55px;
+  height:40px;
   font-size:18px;
   padding-left:20px;
   opacity:80%;
   padding-bottom:5px
 }
 @media (min-width: 765px){
-  #frame{
-    width:30%;
-    position:absolute;
-    right:50px;
-    bottom:120px
-  }
+.body{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+} 
+#home{
+  display: flex;
+  align-items: center;
+  height:100%
+}
+#frame{
+  width:300px;
+  position:unset;
+  margin-right:150px
+}
 }
 </style>

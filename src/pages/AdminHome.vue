@@ -7,7 +7,7 @@
       </p>
     </div>
     <p class="default-text"> Vous n'avez pas encore créé d'évènement, cliquez sur le bouton '+' pour commencer l'aventure !</p>
-    <fa icon="plus-circle"/>
+    <fa icon="plus-circle" class="circle"/>
   </div>
 </template>
 
@@ -31,26 +31,34 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+.user{
+  font-size:30px;
+  margin-left:10px
+}
 .name{
   font-family:'Roboto';
   position:absolute;
   right:30px;
-  top:3vh;
+  top:20px;
   color:white;
   font-size:20px;
-  font-weight:900
+  font-weight:900;
 }
-
 .default-text{
   font-family:'Roboto';
   position:absolute;
-  top:80vh;
+  bottom:70px;
   width:calc(100%-500px);
   padding: 0 120px 0 120px;
   font-size:23px;
   font-weight:500;
   opacity:25%;
 }
-
+.circle{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  color:green;
+  font-size:50px
+}
 </style>

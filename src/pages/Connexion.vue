@@ -1,12 +1,15 @@
 <template>
-  <div id="connexion">
-    <background :image="rocket_img"/>
-    <div id="frame">
-    <div class="top-frame">
-      <img class="arrow" src="@/assets/images/back.png">
-      <p> Connexion </p>
-    </div>
-    <hr/>
+  <div class="connexion">
+    <div class="page-body">
+      <div>
+        <background :image="rocket_img"/>
+      </div>
+      <div id="frame">
+        <div class="top-frame">
+          <img class="arrow" src="@/assets/images/back.png">
+          <p> Connexion </p>
+        </div>
+        <hr/>
         <form id="form" @submit="checkform" action="" method="post">
           <label for="email"> Email* </label>
           <input type="text" required>
@@ -14,6 +17,7 @@
           <input type="text" required placeholder="********">
           <button id="connect-button" v-on:click='x'> Se connecter </button>
         </form>
+      </div>
     </div>
   </div>
 </template>
@@ -38,7 +42,7 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-#connexion{
+.connexion{
   text-align: center;
   padding-top: 20px;
   font-family:'Roboto';
@@ -62,13 +66,6 @@ export default {
   width:4vh;
   height:4vh;
   opacity:40%
-}
-#rocket{
-  width:200vh;
-  height:200vh;
-  position:relative;
-  left:-75vh;
-  top:-70vh
 }
 #connect-button{
   width:46vh;
@@ -100,8 +97,25 @@ hr{
   margin:15px;
   padding:15px;
   box-shadow: 1px 1px 15px #cccccc;
-  position:relative;
-  top:48vh;
+  position:absolute;
+  bottom:10px;
+  width: calc(100% - 60px);
 }
-
+@media (min-width: 765px){
+.page-body{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+}
+.connexion{
+  display: flex;
+  align-items: center;
+  height:100%
+}
+#frame{
+  width:300px;
+  position:unset;
+  margin-right:150px
+}
+}
 </style>
