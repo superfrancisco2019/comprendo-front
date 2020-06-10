@@ -62,16 +62,16 @@ export default {
   padding-top:150px;
   display:flex;
   align-items:center;
-  justify-content:space-around;
+  justify-content:center;
 }
-.frame div{
+.frame>div{
   width:20%;
   display:flex;
   box-shadow: 1px 1px 15px #cccccc;
   border-radius:20px;
   padding:7px;
   align-items:center;
-
+  margin: 0px 10px;
 }
 .frame div img{
   width:8vw;
@@ -82,7 +82,8 @@ export default {
   flex-direction:column;
   box-shadow:none;
   font-size:10px;
-  padding-left:30px
+  flex-grow: 1;
+  text-align: center;
 }
 .frame div div h2{
   margin:0
