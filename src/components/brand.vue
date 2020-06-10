@@ -1,7 +1,8 @@
 <template>
   <div class="brand" :class="{'is-light': theme === 'light', 'is-dark': theme === 'dark'}">
     <h1 >Comprendo</h1>
-    <h2 v-show="theme !== 'dark'">L'important n'est pas de participer, mais de comprendre.</h2>  
+    <h2 v-show="theme !== 'dark'">L'important n'est pas de participer, mais de comprendre.</h2> 
+    <div class="header" v-show="theme !== 'light'"><h3 class="name"> François B.</h3> <fa icon="user-circle" class='user'/></div>
   </div>
 </template>
 
@@ -70,20 +71,32 @@ h2 {
 .brand.is-light h1{
   color:#60AEE3;
 }
+.header{
+  display:flex;
+  align-items:center;
+  position:absolute;
+  right:30px;
+  top:20px;
+  color:white
+}
+.header h3{
+  margin-right:10px
+}
+.user{
+  font-size:35px
+}
 @media (min-width: 765px){
-  h1 {
-    position:absolute;
-    left: 30px;
-    /*right: calc(100% - 30px);*/
-    
-    top:20px;
-  }
-  h2{
-    position:absolute;
-    right:30px;
-    top:20px;
-    width:500px;
-    padding:0
-  }
+h1 {
+  position:absolute;
+  left: 30px;
+  top:20px;
+}
+h2{
+  position:absolute;
+  right:30px;
+  top:20px;
+  width:500px;
+  padding:0
+}
 }
 </style>

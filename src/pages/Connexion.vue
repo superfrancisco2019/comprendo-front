@@ -68,14 +68,13 @@ export default {
   opacity:40%
 }
 #connect-button{
-  width:46vh;
-  height:4vh;
+  width:calc(100%-30px);
+  height:40px;
   background-color:#60AEE3;
   border:none;
   color:white;
   font-family:'Roboto';
   font-size:18px;
-  height:8vh;
   border-radius:30px
   }
 form{
@@ -86,7 +85,8 @@ form{
 input{
   margin-bottom:15px;
   font-size:18px;
-  opacity:60%
+  opacity:60%;
+  height:40px
 }
 hr{
   opacity:30%

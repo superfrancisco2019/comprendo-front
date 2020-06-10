@@ -1,11 +1,6 @@
 <template>
-  <div calss="adminHome" :class="{'event-created': theme === 'dashboard', 'no-event': theme === 'default'}">>
-    <background :image="manager_img"/>
-    <div class="user-profile">
-      <p class="name"> François B. 
-        <fa icon="user-circle" class='user'/>
-      </p>
-    </div>
+  <div class="adminHome" :class="{'event-created': theme === 'dashboard', 'no-event': theme === 'default'}">
+    <div class="image"><background :image="manager_img"/></div>
     <p class="default-text"> Vous n'avez pas encore créé d'évènement, cliquez sur le bouton '+' pour commencer l'aventure !</p>
     <fa icon="plus-circle" class="circle"/>
   </div>
@@ -60,5 +55,13 @@ export default {
   right:10px;
   color:green;
   font-size:50px
+}
+.image{
+  width:100px
+}
+.background{
+  background-position:center center;
+  width:500px;
+  position:fixed
 }
 </style>

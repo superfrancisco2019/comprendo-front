@@ -207,7 +207,6 @@ input:checked + .switch-slider:before {
 }
 @media (min-width: 765px){
 .sign-up-frame{
-  top:135px;
   right:80px;
   width:300px;
   margin:0
