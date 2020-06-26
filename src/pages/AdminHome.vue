@@ -53,7 +53,7 @@ export default {
   position:absolute;
   bottom:10px;
   right:10px;
-  color:green;
+  color:#1ABC9C;
   font-size:50px
 }
 .image{
