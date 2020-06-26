@@ -41,9 +41,10 @@
       </carousel-3d>
       <div class="event-title-container"> 
         <p class="event-title"> "Comment sortir de prison en deux étapes simpes"</p> 
-        <fa icon="plus-circle" class="circle"/>
+        
       </div>
     </div>
+    <fa icon="plus-circle" class="circle"/>
   </div>
 </template>
 
@@ -62,16 +63,20 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+.adminHome2{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .statistics-container{
-  width:100%;
   padding-top:150px;
   display:flex;
   align-items:center;
   justify-content:center;
+  flex-wrap: wrap;
 }
 .statistics-cards{
-  width:20%;
+  flex: 0 0 20%;
   display:flex;
   box-shadow: 1px 1px 15px #cccccc;
   border-radius:20px;
@@ -119,18 +124,37 @@ export default {
   opacity:60%;
   margin-top:10px;
   flex-grow:1;
-  margin-left:80px
 }
 .circle{
   color:#1ABC9C;
   font-size:50px;
-  margin-right:20px
+  margin-right:20px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 @media (max-width: 1001px){
 .adminHome2{
-  display:grid;
-  grid-template-columns:200px 200px;
-  grid-template-rows:500px 500px 
+  display: flex;
+  flex-direction: row;
+}
+.carousel-container {
+  flex-grow: 4
+}
+.statistics-container {
+  flex-grow: 1;
+  justify-content: space-around;
+}
+.statistics-cards{
+  flex: 0 0 40%;
 }
 }
 </style>
