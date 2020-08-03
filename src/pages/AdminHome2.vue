@@ -147,14 +147,15 @@ export default {
   flex-direction: row;
 }
 .carousel-container {
-  flex-grow: 4
+  flex-grow: 4;
+  margin-right:15px;
 }
 .statistics-container {
   flex-grow: 1;
   justify-content: space-around;
 }
 .statistics-cards{
-  flex: 0 0 40%;
+  flex: 0 0 35%;
 }
 }
 </style>
