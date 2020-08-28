@@ -48,7 +48,6 @@ export default {
 .brand.is-dark {
   background-color: #60AEE3;
 }
-
 h1 {
   font-weight: normal;
   color:#60AEE3;
@@ -56,7 +55,12 @@ h1 {
   margin:0;
   padding:0
 }
-
+.header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
 h2 {
   font-family:'Roboto';
   opacity:16%;
@@ -64,26 +68,15 @@ h2 {
   padding-right:4vh;
   padding-left:4vh
 }
-
 .brand.is-dark h1{
   color:white;
 }
 .brand.is-light h1{
   color:#60AEE3;
 }
-.header{
-  display:flex;
-  align-items:center;
-  position:absolute;
-  right:30px;
-  top:20px;
-  color:white
-}
-.header h3{
-  margin-right:10px
-}
 .user{
-  font-size:35px
+  font-size:35px;
+  margin-left:5px;
 }
 @media (min-width: 765px){
 h1 {
@@ -97,6 +90,17 @@ h2{
   top:20px;
   width:500px;
   padding:0
+}
+.header{
+  display:flex;
+  align-items:center;
+  position:absolute;
+  right:30px;
+  top:20px;
+  color:white;
+}
+.header h3{
+  margin-right:10px
 }
 }
 </style>

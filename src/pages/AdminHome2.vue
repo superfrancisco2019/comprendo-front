@@ -30,6 +30,9 @@
         </div>
       </div>
     </div>
+    <div class="images">
+      <img class="carousel-img" src="@/assets/images/meeting.jpeg">
+    </div>
     <div class="carousel-container">
       <carousel-3d>
           <slide :index="0">
@@ -41,7 +44,6 @@
       </carousel-3d>
       <div class="event-title-container"> 
         <p class="event-title"> "Comment sortir de prison en deux étapes simpes"</p> 
-        
       </div>
     </div>
     <fa icon="plus-circle" class="circle"/>
@@ -103,6 +105,13 @@ export default {
 .statistics-title{
   color:#1ABC9C;
 }
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
 .carousel-img{
   width:100%;
   height:100%
@@ -133,23 +142,16 @@ export default {
   bottom: 10px;
   right: 10px;
 }
-
-.carousel-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.images{
+  display:none
 }
+
 @media (max-width: 1001px){
 .adminHome2{
   display: flex;
   flex-direction: row;
 }
-.carousel-container {
-  flex-grow: 4;
-  margin-right:15px;
-}
+
 .statistics-container {
   flex-grow: 1;
   justify-content: space-around;
@@ -157,5 +159,16 @@ export default {
 .statistics-cards{
   flex: 0 0 35%;
 }
+.carousel-container{
+  display:none
 }
+.images{
+  display:flex;
+  position:relative;
+  top:200px;
+}
+.images img{
+  height:100px;
+  width:100px
+}}
 </style>
